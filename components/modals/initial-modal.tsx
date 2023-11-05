@@ -23,7 +23,7 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
-import FileUpload from "@/components/ui/file-upload";
+import FileUpload from "@/components/file-upload";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 
