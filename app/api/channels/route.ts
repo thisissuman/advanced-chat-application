@@ -2,7 +2,7 @@ import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 import { MemberRole } from "@prisma/client";
 import { NextResponse } from "next/server";
-import { v4 as uudifv4 } from "uuid";
+
 
 export async function POST(req: Request) {
   try {
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
     });
     return NextResponse.json(server);
   } catch (error) {
-    console.log("[CHANNEL_POST]", error);
+    console.log("CHANNELS_POST", error);
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
